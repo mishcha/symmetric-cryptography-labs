@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat May  2 21:22:24 2020
-
-@author: 1
-"""
-
 import math, pandas, re, copy
 
 #Открытие файла 
