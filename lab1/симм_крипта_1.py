@@ -1,6 +1,6 @@
 import math, pandas, re, copy
 
-with open("Jason Schreier.txt", 'rb') as file: Text = file.read().decode('utf-8')
+with open("Jason Schreier.txt", 'rb') as file: Text = file.read().decode('utf-8') # jason schreier.txt -> something.txt
 
 pattern_1 = r'ё'
 pattern_2 = r'ъ'    
