@@ -16,7 +16,7 @@ rus_with_space = 'абвгдежзийклмнопрстуфхцчшщыьэюя
 rus_no_space = 'абвгдежзийклмнопрстуфхцчшщыьэюя'
 
 alphabet_no_space = dict.fromkeys(list(rus_no_space), 0)
-alphabet = dict.fromkeys(list(rus_with_space), 0) 
+alphabet_with_space = dict.fromkeys(list(rus_with_space), 0) 
 
 
 #Подсчет букв в тексте
@@ -31,9 +31,9 @@ def dictionary_sorting(dictionary):
     return frequency, H_entropy
 
 print('_______________________________________________________________________')
-print('Частота букв текста: ', dictionary_sorting(alphabet)[0])
+print('Частота букв текста: ', dictionary_sorting(alphabet_with_space)[0])
 print('_______________________________________________________________________')
-print('Энтропия букв текста: ', dictionary_sorting(alphabet)[1])
+print('Энтропия букв текста: ', dictionary_sorting(alphabet_with_space)[1])
 print('_______________________________________________________________________')
 print('Энтропия букв текста без пробелов: ', dictionary_sorting(alphabet_no_space)[1])
 
